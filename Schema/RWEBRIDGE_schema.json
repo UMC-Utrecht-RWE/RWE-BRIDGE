@@ -1,0 +1,110 @@
+{
+  "RWE_BRIDGE": [
+    {
+      "name": "study_variables",
+      "columns": [
+        {"name": "variable_id", "type": "varchar(50)", "primary_key": true},
+        {"name": "concept_id", "type": "varchar(50)", "foreign_key": "code_list.concept_id"},
+        {"name": "exposure", "type": "boolean"},
+        {"name": "outcome", "type": "boolean"},
+        {"name": "covariate", "type": "boolean"},
+        {"name": "data_type", "type": "varchar(50)"},
+        {"name": "start_look_back", "type": "int"},
+        {"name": "end_look_back", "type": "int"},
+        {"name": "variable_description", "type": "int"}
+      ]
+    },
+    {
+      "name": "composite_study_variables",
+      "columns": [
+        {"name": "variable_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.variable_id"},
+        {"name": "sub_variable_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.variable_id"},
+        {"name": "combination_rule", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "complex_study_variables",
+      "columns": [
+        {"name": "variable_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.variable_id"},
+        {"name": "function", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "code_lists",
+      "columns": [
+        {"name": "concept_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.concept_id"},
+        {"name": "cdm_name", "type": "varchar(50)"},
+        {"name": "cdm_table_name", "type": "varchar(50)"},
+        {"name": "coding_system", "type": "varchar(50)","foreign_key": "coding_systems.coding_system"},
+        {"name": "code", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "coding_systems",
+      "columns": [
+        {"name": "coding_system", "type": "varchar(50)", "primary_key": true},
+        {"name": "dap_name", "type": "varchar(50)","foreign_key": "dap.dap_name"},
+        {"name": "start_exact_match", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "dap_specific_concept_map",
+      "columns": [
+        {"name": "concept_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.concept_id"},
+        {"name": "dap_name", "type": "varchar(50)","foreign_key": "dap.dap_name"},
+        {"name": "cdm_name", "type": "varchar(50)"},
+        {"name": "cdm_table_name", "type": "varchar(50)"},
+        {"name": "colum_name", "type": "varchar(50)"},
+        {"name": "expected_value", "type": "varchar(50)"},
+        {"name": "keep_value_column_name", "type": "varchar(50)"},
+        {"name": "keep_date_column_name", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "dictionary",
+      "columns": [
+        {"name": "variable_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.variable_id"},
+        {"name": "dap_name", "type": "varchar(50)","foreign_key": "dap.dap_name"},
+        {"name": "original_value", "type": "varchar(50)"},
+        {"name": "standart_value", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "dap",
+      "columns": [
+        {"name": "dap_name", "type": "varchar(50)", "primary_key": true},
+        {"name": "start_study_period", "type": "varchar(50)"},
+        {"name": "end_study_period", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "study_cohort",
+      "columns": [
+        {"name": "cohort_name", "type": "varchar(50)", "primary_key": true},
+        {"name": "study_objective", "type": "varchar(50)"},
+        {"name": "variable_id", "type": "varchar(50)","foreign_key": "study_variables.variable_id"}
+      ]
+    },
+    {
+      "name": "criteria",
+      "columns": [
+        {"name": "cohort_name", "type": "varchar(50)", "primary_key": true,"foreign_key": "study_cohort.cohort_name"},
+        {"name": "exclusion_inclusion", "type": "varchar(50)"},
+        {"name": "criteria_aplication_order", "type": "integer"},
+        {"name": "criteria_definition", "type": "varchar(50)"}
+      ]
+    },
+    {
+      "name": "post_exposure_outcome_analysis",
+      "columns": [
+         {"name": "variable_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.variable_id"},
+        {"name": "start_risk_period", "type": "integer"},
+        {"name": "end_risk_period", "type": "integer"},
+	{"name": "start_washout_period", "type": "integer"},
+	{"name": "start_washout_period", "type": "integer"},
+        {"name": "analysis_type", "type": "varchar(50)"}
+      ]
+    }
+    
+  ]
+}
