@@ -1,1 +1,3 @@
-"concept_id","dap_name","cdm_name","cdm_table_name","colum_name","expected_value","keep_value_column_name","keep_date_column_name"
+"concept_id","dap_name","cdm_name","cdm_table_name","colum_name_1","colum_name_2","expected_value_1","expected_value_2","keep_value_column_name","keep_date_column_name"
+VP_COVID,DAP_1,CONCEPTION,VACCINES,vx_atc,NA,J07BX03,NA,NA,vx_admin_date
+BMI,DAP_2,OMOP,OBSERVATIONS,observation_concept_id,unit_source_value,BMI,kg/m2,value_source_value,observation_date
