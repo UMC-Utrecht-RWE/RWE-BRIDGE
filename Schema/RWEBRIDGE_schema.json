@@ -101,7 +101,7 @@
         {"name": "start_risk_period", "type": "integer"},
         {"name": "end_risk_period", "type": "integer"},
 	{"name": "start_washout_period", "type": "integer"},
-	{"name": "start_washout_period", "type": "integer"},
+	{"name": "end_washout_period", "type": "integer"},
         {"name": "analysis_type", "type": "varchar(50)"}
       ]
     }
