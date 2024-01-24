@@ -25,8 +25,9 @@
     {
       "name": "complex_study_variables",
       "columns": [
-        {"name": "variable_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.variable_id"},
+        {"name": "concept_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.concept_id"},
         {"name": "function", "type": "varchar(50)"}
+        {"sub_concept_id": "function", "type": "varchar(50)"}
       ]
     },
     {
