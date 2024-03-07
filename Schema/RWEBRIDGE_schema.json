@@ -55,7 +55,7 @@
         {"name": "dap_name", "type": "varchar(50)","foreign_key": "dap.dap_name"},
         {"name": "cdm_name", "type": "varchar(50)"},
         {"name": "cdm_table_name", "type": "varchar(50)"},
-        {"name": "colum_name", "type": "varchar(50)"},
+        {"name": "column_name", "type": "varchar(50)"},
         {"name": "expected_value", "type": "varchar(50)"},
         {"name": "keep_value_column_name", "type": "varchar(50)"},
         {"name": "keep_date_column_name", "type": "varchar(50)"}
