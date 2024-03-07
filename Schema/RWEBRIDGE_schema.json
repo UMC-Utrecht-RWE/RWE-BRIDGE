@@ -67,7 +67,7 @@
         {"name": "variable_id", "type": "varchar(50)", "primary_key": true, "foreign_key": "study_variables.variable_id"},
         {"name": "dap_name", "type": "varchar(50)","foreign_key": "dap.dap_name"},
         {"name": "original_value", "type": "varchar(50)"},
-        {"name": "standart_value", "type": "varchar(50)"}
+        {"name": "standard_value", "type": "varchar(50)"}
       ]
     },
     {
