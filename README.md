@@ -11,9 +11,14 @@ Find below the RWE-BRIDGE metadata model diagram.
 
 ![Alt Text](images/theBridge.png)
 
+## Connecting RWE-BRIDGE and RWE tools
+
+The figure below provides an overview of different tools available in the literature and how they connect to each other in the RWE generation pipeline
+
+![Alt Text](images/rwetools_and_rwebridge.png)
 
 ## Connecting RWE-BRIDGE and HARPER protocol
 
-Below you can find the information transfer flow from the HARPER protocol to the RWE-BRIDGE. Once you have reviewed and validated the information found in the HARPER protocol you can transfer them following the diagram below to the RWE-BRIDGE metadata scheme.
+Below is the information transfer flow from the HARPER protocol to the RWE-BRIDGE. Once you have reviewed and validated the information in the HARPER protocol, you can transfer it to the RWE-BRIDGE metadata scheme following the diagram below.
 
 ![Alt Text](images/bridge_and_harper.png)
