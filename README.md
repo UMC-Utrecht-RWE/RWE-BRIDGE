@@ -10,3 +10,10 @@ We have also developed a metadata checker that supports our complex metadata pop
 Find below the RWE-BRIDGE metadata model diagram.
 
 ![Alt Text](images/theBridge.png)
+
+
+## Connecting RWE-BRIDGE and HARPER protocol
+
+Below you can find the information transfer flow from the HARPER protocol to the RWE-BRIDGE. Once you have reviewed and validated the information found in the HARPER protocol you can transfer them following the diagram below to the RWE-BRIDGE metadata scheme.
+
+![Alt Text](images/bridge_and_harper.png)
