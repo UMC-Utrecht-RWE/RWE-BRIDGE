@@ -1,0 +1,43 @@
+Table,Field,Description
+study_variables,variable_id,String unique identifier for a study variable
+study_tvariables,concept_id,Foreign key and string unique identifier of the concept used for defining the study variable
+study_tvariables,exposure,Boolean value defining whether the variable is an exposure variable or not
+study_tvariables,outcome,Boolean value defining whether the variable is an outcome variable or not
+study_tvariables,covariate,Boolean value defining whether the variable is a covariable or not
+study_tvariables,data_type,Data type of the variable when used as study variable
+study_tvariables,start_look_back,Integer defining the start of look back window prior to index date
+study_tvariables,end_look_back,Integer defining the end of look back window prior to index date
+study_tvariables,date_extraction_func,String with the function name used for anchoring
+study_tvariables,variable_description,Text used as the description of the variable
+composite_study_variables,variable_id,Foreign key to the study variables ID and string unique identifier of the composite study variable
+composite_study_variables,sub_variable_id,"Foreign key to the study variables ID,  defines which study variables are combined"
+composite_study_variables,combination_rule,"String defining which combination logic rule is used for combining the subvariables - this can be OR, AND, and AND NOT"
+study_cohort,cohort_name,String unique identifier defining
+study_cohort,study_objective,
+study_cohort,variable_id,
+criteria,cohort_name,
+criteria,exclusion_inclusion,
+criteria,criteria_aplication_order,
+criteria,criteria_definition,
+code_list,concept_id,
+code_list,cdm_name,
+code_list,cdm_table_name,
+code_list,coding_system,
+code_list,code,
+coding_system,coding_system,
+coding_system,dap_name,
+coding_system,start_exact_match,
+dap_specific_concept_map,concept_id,
+dap_specific_concept_map,dap_name,
+dap_specific_concept_map,cdm_name,
+dap_specific_concept_map,cdm_table_name,
+dap_specific_concept_map,column_name_1,
+dap_specific_concept_map,column_name_2,
+dap_specific_concept_map,expected_value_1,
+dap_specific_concept_map,expected_value_2,
+dap_specific_concept_map,keep_value_column_name,
+dap_specific_concept_map,keep_date_column_name,
+Dictionary,concept_id,
+dictionary,dap_name,
+dictionary,original_value,
+dictionary,standard_value,
