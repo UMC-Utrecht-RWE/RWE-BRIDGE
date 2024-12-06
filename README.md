@@ -22,3 +22,9 @@ The figure below provides an overview of different tools available in the litera
 Below is the information transfer flow from the HARPER protocol to the RWE-BRIDGE. Once you have reviewed and validated the information in the HARPER protocol, you can transfer it to the RWE-BRIDGE metadata scheme following the diagram below.
 
 ![Alt Text](images/bridge_and_harper.png)
+
+## Repository Citation 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14284182.svg)](https://doi.org/10.5281/zenodo.14284182)
+
+## Publication 
+[Royo AC, Elbers Jhj R, Weibel D, Hoxhaj V, Kurkcuoglu Z, Sturkenboom MCJ, Vaz TA, Andaur Navarro CL. Real-World Evidence BRIDGE: A Tool to Connect Protocol With Code Programming. Pharmacoepidemiol Drug Saf. 2024 Dec;33(12):e70062. doi: 10.1002/pds.70062. PMID: 39603653; PMCID: PMC11602246](https://pubmed.ncbi.nlm.nih.gov/39603653/) 
